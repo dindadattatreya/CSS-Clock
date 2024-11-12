@@ -1,5 +1,6 @@
 # CSS-Clock
 a dumb simple css clock
+
 <!DOCTYPE html> defines the type of document and tells the browser to interpret the file as HTML5
 <html lang="en"> indicating language = english
 
