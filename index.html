@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Clock</title>
+    <style>
+        /* Base styling for the clock */
+        .clock {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            border: 10px solid #333;
+            border-radius: 50%;
+            background: #fff;
+            margin: 20px auto;
+        }
+
+        .clock .center {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #333;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+
+        /* Styling for the clock hands */
+        .clock .hand {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center bottom;
+            transform: translate(-50%, -100%) rotate(90deg);
+            transition: all 0.05s ease-in-out;
+        }
+
+        .hour {
+            width: 8px;
+            height: 50px;
+            background: #333;
+            z-index: 3;
+        }
+
+        .minute {
+            width: 6px;
+            height: 70px;
+            background: #333;
+            z-index: 2;
+        }
+
+        .second {
+            width: 2px;
+            height: 90px;
+            background: red;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="center"></div>
+        <div class="hand hour" id="hour"></div>
+        <div class="hand minute" id="minute"></div>
+        <div class="hand second" id="second"></div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const seconds = now.getSeconds();
+            const minutes = now.getMinutes();
+            const hours = now.getHours();
+
+            const secondDeg = seconds * 6; // 360 degrees / 60 seconds
+            const minuteDeg = minutes * 6 + seconds * 0.1; // 6 degrees / minute + offset
+            const hourDeg = hours * 30 + minutes * 0.5; // 30 degrees / hour + offset
+
+            document.getElementById("second").style.transform = `translate(-50%, -100%) rotate(${secondDeg}deg)`;
+            document.getElementById("minute").style.transform = `translate(-50%, -100%) rotate(${minuteDeg}deg)`;
+            document.getElementById("hour").style.transform = `translate(-50%, -100%) rotate(${hourDeg}deg)`;
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock(); // Initial call to set correct time on load
+    </script>
+</body>
+
+</html>
