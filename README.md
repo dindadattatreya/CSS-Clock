@@ -1,17 +1,19 @@
-	# CSS-Clock
-	a dumb simple css clock
+# CSS-Clock
+a dumb simple css clock
 	
-		<!DOCTYPE html> defines the type of document and tells the browser to interpret the file as HTML5
-		<html lang="en"> indicating language = english
+`<!DOCTYPE html>`
+defines the type of document and tells the browser to interpret the file as HTML5
+`<html lang="en">`
+indicating language = english
 		
-		<head> container of metadata of document
-		    <meta charset="UTF-8"> character encoding = UTF-8, it allows a wide range of characters and symbols
-		    <meta name="viewport" content="width=device-width, initial-scale=1.0"> proper scaling on mobile devices by setting the viewport to the deviceâ€™s width and an initial zoom of 100%
+`<head>` container of metadata of document
+`<meta charset="UTF-8">` character encoding = UTF-8, it allows a wide range of characters and symbols
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">` proper scaling on mobile devices by setting the viewport to the deviceâ€™s width and an initial zoom of 100%
 	
-	    <title>CSS Clock</title> CSS Clock will appear on browser tab
-	    <style> starts a css code block
-	        /* Base styling for the clock */ this is a comment in code
-	        .clock { style of the container of main clock
+`<title>CSS Clock</title>` CSS Clock will appear on browser tab
+`<style>` starts a css code block
+`/* Base styling for the clock */` this is a comment in code
+`.clock {` style of the container of main clock
 	            position: relative; it defines 2 things, 1st is its position becomes relative and 2nd it allows positioning child elements in the clock div or the container
 	            width: 200px;
 	            height: 200px; it makes resolution of the clock size to 200x200 pixels
