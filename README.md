@@ -89,7 +89,7 @@ This project demonstrates how to use HTML for structure, CSS for styling, and Ja
 
 ##Key Points
 HTML Elements
-`DOCTYPE`: Defines the document type as HTML5.
+`DOCTYPE`: Defines the document type as HTML5. <br/>
 `meta` tags: Sets the character encoding to UTF-8 and adjusts the viewport for mobile scaling.
 `title`: Sets "CSS Clock" as the title of the webpage.
 `divs`: Creates spaces within the clock and defines structure.
