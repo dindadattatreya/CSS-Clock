@@ -86,7 +86,6 @@ This project demonstrates how to use HTML for structure, CSS for styling, and Ja
 </html>
 ```
 ---
-
 ##Key Points
 HTML Elements <br/>
 `DOCTYPE`: Defines the document type as HTML5. <br/>
