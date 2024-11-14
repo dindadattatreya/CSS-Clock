@@ -86,7 +86,7 @@ This project demonstrates how to use HTML for structure, CSS for styling, and Ja
 </html>
 ```
 ---
-##Key Points
+Key Points
 HTML Elements <br/>
 `DOCTYPE`: Defines the document type as HTML5. <br/>
 `meta` tags: Sets the character encoding to UTF-8 and adjusts the viewport for mobile scaling. <br/>
@@ -94,20 +94,20 @@ HTML Elements <br/>
 `divs`: Creates spaces within the clock and defines structure. <br/>
 
 ---
-##CSS Styling <br/>
+CSS Styling <br/>
 `.clock`: Defines the outer circle and appearance of the clock. <br/>
 `.center`: Creates a small dot at the center of the clock for aesthetic purposes. <br/>
 `.hand`: Styles for the hour, minute, and second hands, including the rotation origin. <br/>
 
 ---
-##JavaScript Logic <br/>
+JavaScript Logic <br/>
 `updateClock()`: Calculates the angle for each hand based on the current time and applies transformations. <br/>
 `const` variables store seconds, minutes, and hours, calculating the degrees for each hand. <br/>
 `setInterval`: Updates the clock every second. <br/>
 
 ---
-##Usage <br/>
+Usage <br/>
 To run the clock, simply open the HTML file in a browser. The JavaScript will keep the clock hands moving according to the current time. <br/>
 ---
-##License <br/>
+License <br/>
 This project is open-source and free to use.
