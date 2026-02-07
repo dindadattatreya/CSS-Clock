@@ -1,3 +1,4 @@
+#This was my first repo on GitHub, only made for own learning purposes. Don't take this seriously :).
 # CSS-Clock
 
 A simple CSS clock with HTML and JavaScript. This project is designed as an introductory example of using HTML, CSS, and JavaScript together to create a functional clock.
